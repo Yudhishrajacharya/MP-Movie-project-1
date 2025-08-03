@@ -45,7 +45,7 @@ const Topnav = () => {
 
                 {searches.map((s, i) => (
                     <Link key={i} className=' hover:text-black hover:bg-zinc-300 duration-300 font-semibold text-zinc-600  p-10   w-[100%] flex justify-start items-center border-b-2 border-zinc-100'>
-                        <img className="w-[10vh] h-[10vh] object-cover rounded mr-5 shadow-lg "
+                        <img className="w-[15vh] h-[10vh] object-cover rounded mr-5 shadow-lg "
                          src={s.profile_path || s.backdrop_path ? `https://image.tmdb.org/t/p/original/${s.backdrop_path || s.poster_path  || s.profile_path}`: noimage}  alt="" />
                         <span>{s.name || s.title || s.original_name || s.orignal_title}</span>
                        
